@@ -7,6 +7,10 @@ const StyledText = styled.p`
     letter-spacing: -0.63px;
     text-align: center;
     margin-bottom: 39px;
+
+    @media screen and (width>1440px) {
+        text-align: left;
+    }
 `;
 
 export {StyledText};

@@ -2,6 +2,7 @@ import CARDS_INFO from './components/constants/rates-info';
 import CARDS_OPINIONS from './components/constants/userOpinion-info';
 import Container from './components/Container/Container';
 import InfoBox from './components/Container/InfoBox';
+import TextBox from './components/Container/TextBox';
 import Rates from './components/Rates/Rates';
 import RatesBox from './components/Rates/RatesBox';
 import Texts from './components/texts/Texts';
@@ -17,8 +18,10 @@ const App = () => {
 			<Container>
 				{/* COMO METER TODO AQUI SIN CREAR UN COMPONENTE */}
 				<InfoBox>
-					<Title/>
-					<Texts/>
+					<TextBox>	
+						<Title/>
+						<Texts/>
+					</TextBox>
 					<RatesBox>
 						{CARDS_INFO.map(rate => (
 							<Rates key={rate.id}{...rate}/>
